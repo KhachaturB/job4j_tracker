@@ -3,6 +3,7 @@ package ru.job4j.tracker;
 import java.util.Arrays;
 
 public class Tracker {
+
     private final Item[] items = new Item[100];
     private int ids = 1;
     private int size = 0;
@@ -14,12 +15,8 @@ public class Tracker {
     }
 
     public Item findById(int id) {
-        for (Item item : items) {
-            if (item.getId() == id) {
-                return item;
-            }
-        }
-        return null;
+        int index = indexOf(id);
+        return index == -1 ? null : items[index];
     }
 
     public Item[] findAll() {
@@ -42,5 +39,24 @@ public class Tracker {
             }
         }
         return Arrays.copyOf(result, size);
+    }
+
+    public boolean replace(int id, Item item) {
+        int index = indexOf(id);
+        if (index == -1) {
+            return false;
+        }
+        item.setId(items[index].getId());
+        items[index] = item;
+        return true;
+    }
+
+    private int indexOf(int id) {
+        for (int index = 0; index < size; index++) {
+            if (items[index].getId() == id) {
+                return index;
+            }
+        }
+        return -1;
     }
 }
