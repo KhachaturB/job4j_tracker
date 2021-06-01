@@ -11,21 +11,21 @@ public class Library {
 
         Book[] books = { book1, book2, book3, book4, book5 };
 
-        for (int i = 0; i < books.length; i++) {
-            System.out.println(books[i].getName() + ": " + books[i].getPagesCount() + " стр.");
+        for (Book book : books) {
+            System.out.println(book.getName() + ": " + book.getPagesCount() + " стр.");
         }
         System.out.println();
 
         Book temp = books[0];
         books[0] = books[3];
         books[3] = temp;
-        for (int i = 0; i < books.length; i++) {
-            System.out.println(books[i].getName() + ": " + books[i].getPagesCount() + " стр.");
+        for (Book book : books) {
+            System.out.println(book.getName() + ": " + book.getPagesCount() + " стр.");
         }
         System.out.println();
 
         for (Book book : books) {
-            if (book.getName().equals("Clean code")) {
+            if ("Clean code".equals(book.getName())) {
                 System.out.println(book.getName() + ": " + book.getPagesCount() + " стр.");
                 break;
             }
