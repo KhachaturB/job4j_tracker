@@ -20,7 +20,7 @@ public class StartUI {
                     name = scanner.nextLine();
                     item = new Item(name);
                     tracker.add(item);
-                    System.out.println("Item added (id: " + item.getId() + " name: " + item.getName() + ")");
+                    System.out.println("Item added: " + item);
                     System.out.println();
                     break;
 
@@ -31,7 +31,7 @@ public class StartUI {
                         System.out.println("No items");
                     } else {
                         for (Item itm : items) {
-                            System.out.println("id: " + itm.getId() + " name: " + itm.getName());
+                            System.out.println(itm);
                         }
                     }
                     System.out.println();
@@ -46,7 +46,7 @@ public class StartUI {
                     item = new Item(name);
                     if (tracker.replace(id, item)) {
                         System.out.println("Element has been changed:");
-                        System.out.println("id: " + item.getId() + " name: " + item.getName());
+                        System.out.println(item);
                     } else {
                         System.out.println("Element has not been changed.");
                     }
@@ -73,7 +73,7 @@ public class StartUI {
                     if (item == null) {
                         System.out.println("Item with id " + id + " not found.");
                     } else {
-                        System.out.println("id: " + item.getId() + " name: " + item.getName());
+                        System.out.println(item);
                     }
                     System.out.println();
                     break;
@@ -87,7 +87,7 @@ public class StartUI {
                         System.out.println("Items with name " + name + " not found.");
                     } else {
                         for (Item itm : items) {
-                            System.out.println("id: " + itm.getId() + " name: " + itm.getName());
+                            System.out.println(itm);
                         }
                     }
                     System.out.println();
