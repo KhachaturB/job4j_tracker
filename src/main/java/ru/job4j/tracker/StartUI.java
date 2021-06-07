@@ -15,14 +15,14 @@ public class StartUI {
             int select = input.askInt("Select: ");
             UserAction action = actions[select];
             run = action.execute(input, tracker);
-            System.out.println();
+            out.println("");
         }
     }
 
     private void showMenu(UserAction[] actions) {
         out.println("Menu:");
         for (int i = 0; i < actions.length; i++) {
-            System.out.println(i + ". " + actions[i].name());
+            out.println(i + ". " + actions[i].name());
         }
     }
 
