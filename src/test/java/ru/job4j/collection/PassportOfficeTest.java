@@ -8,10 +8,20 @@ import static org.junit.Assert.*;
 public class PassportOfficeTest {
 
     @Test
-    public void add() {
+    public void whenNoCitizenThenTrue() {
+        Citizen citizen = new Citizen("2f44a", "Petr Arsentev");
+        PassportOffice office = new PassportOffice();
+        boolean result = office.add(citizen);
+        assertTrue(result);
+        assertThat(office.get(citizen.getPassport()), is(citizen));
+    }
+
+    @Test
+    public void whenHasCitizenThenFalse() {
         Citizen citizen = new Citizen("2f44a", "Petr Arsentev");
         PassportOffice office = new PassportOffice();
         office.add(citizen);
-        assertThat(office.get(citizen.getPassport()), is(citizen));
+        var result = office.add(citizen);
+        assertFalse(result);
     }
 }
