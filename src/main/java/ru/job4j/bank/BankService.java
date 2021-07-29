@@ -39,11 +39,12 @@ public class BankService {
             return null;
         }
         List<Account> accounts = users.get(user);
-        int index = accounts.indexOf(new Account(requisite, -1));
-        if (index == -1) {
-            return null;
+        for (Account account : accounts) {
+            if(account.getRequisite().equals(requisite)) {
+                return account;
+            }
         }
-        return accounts.get(index);
+        return null;
     }
 
     public boolean transferMoney(String srcPassport, String srcRequisite,
