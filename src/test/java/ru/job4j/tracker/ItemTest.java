@@ -3,7 +3,7 @@ package ru.job4j.tracker;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -15,20 +15,12 @@ public class ItemTest {
         Item item2 = new Item(2, "Item 2");
         Item item3 = new Item(3, "Item 3");
 
-        List<Item> items = new ArrayList<>();
-        items.add(item2);
-        items.add(item3);
-        items.add(item1);
-
-        Item[] expected = {
-            item1,
-            item2,
-            item3
-        };
+        List<Item> items = Arrays.asList(item2, item3, item1);
+        List<Item> expected = Arrays.asList(item1, item2, item3);
 
         Collections.sort(items);
 
-        Assert.assertArrayEquals(expected, items.toArray());
+        Assert.assertEquals(expected, items);
     }
 
     @Test
@@ -37,19 +29,11 @@ public class ItemTest {
         Item item2 = new Item(2, "Item 2");
         Item item3 = new Item(3, "Item 3");
 
-        List<Item> items = new ArrayList<>();
-        items.add(item2);
-        items.add(item3);
-        items.add(item1);
-
-        Item[] expected = {
-                item3,
-                item2,
-                item1
-        };
+        List<Item> items = Arrays.asList(item2, item3, item1);
+        List<Item> expected = Arrays.asList(item3, item2, item1);
 
         items.sort(new ItemReverseComparator());
 
-        Assert.assertArrayEquals(expected, items.toArray());
+        Assert.assertEquals(expected, items);
     }
 }

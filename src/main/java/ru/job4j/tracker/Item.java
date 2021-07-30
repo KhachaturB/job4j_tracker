@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 public class Item implements Comparable<Item> {
 
-    private Integer id;
+    private int id;
 
     private String name;
 
@@ -22,7 +22,7 @@ public class Item implements Comparable<Item> {
         this.name = name;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
@@ -53,6 +53,6 @@ public class Item implements Comparable<Item> {
 
     @Override
     public int compareTo(Item o) {
-        return id.compareTo(o.id);
+        return Integer.compare(id, o.id);
     }
 }
