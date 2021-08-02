@@ -10,8 +10,8 @@ public class College {
         student.setGroup("6G-13");
         student.setReceiptDate(LocalDate.now());
 
-        System.out.println(student.getFio() +
-                " учится в группе " + student.getGroup() +
-                " и принят на учебу " + student.getReceiptDate());
+        System.out.println(student.getFio()
+                + " учится в группе " + student.getGroup()
+                + " и принят на учебу " + student.getReceiptDate());
     }
 }

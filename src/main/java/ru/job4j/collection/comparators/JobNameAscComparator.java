@@ -1,4 +1,4 @@
-package ru.job4j.collection.Comparators;
+package ru.job4j.collection.comparators;
 
 import ru.job4j.collection.Job;
 

@@ -8,7 +8,7 @@ public class Engineer extends Profession {
         super(name, surname, education, birthday);
     }
 
-    public Model createModel(){
+    public Model createModel() {
         return new Model();
     }
 

@@ -6,7 +6,8 @@ public class Doctor extends Profession {
 
     private boolean hasLicense;
 
-    public Doctor(String name, String surname, String education, Date birthday, boolean hasLicense) {
+    public Doctor(String name, String surname, String education, Date birthday,
+                  boolean hasLicense) {
         super(name, surname, education, birthday);
         this.hasLicense = hasLicense;
     }

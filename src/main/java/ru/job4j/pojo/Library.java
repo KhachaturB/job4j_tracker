@@ -9,7 +9,7 @@ public class Library {
         Book book4 = new Book("Приключения капитана Врунгеля", 250);
         Book book5 = new Book("Clean code", 500);
 
-        Book[] books = { book1, book2, book3, book4, book5 };
+        Book[] books = {book1, book2, book3, book4, book5};
 
         for (Book book : books) {
             System.out.println(book.getName() + ": " + book.getPagesCount() + " стр.");

@@ -2,7 +2,7 @@ package ru.job4j.collection;
 
 import org.junit.Assert;
 import org.junit.Test;
-import ru.job4j.collection.Comparators.*;
+import ru.job4j.collection.comparators.*;
 
 import java.util.Arrays;
 import java.util.List;

@@ -4,7 +4,8 @@ import java.util.Date;
 
 public class Dentist extends Doctor {
 
-    public Dentist(String name, String surname, String education, Date birthday, boolean hasLicense) {
+    public Dentist(String name, String surname, String education, Date birthday,
+                   boolean hasLicense) {
         super(name, surname, education, birthday, hasLicense);
     }
 

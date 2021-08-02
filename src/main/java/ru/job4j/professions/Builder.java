@@ -8,11 +8,11 @@ public class Builder extends Engineer {
         super(name, surname, education, birthday);
     }
 
-    public Drawing createDrawing(){
+    public Drawing createDrawing() {
         return new Drawing();
     }
 
-    public boolean testItem(ConstructionItem item){
+    public boolean testItem(ConstructionItem item) {
         return false;
     }
 }

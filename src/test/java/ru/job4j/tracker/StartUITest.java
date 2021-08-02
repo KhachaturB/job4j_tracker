@@ -68,9 +68,9 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         String ls = System.lineSeparator();
         assertThat(out.toString(), is(
-                "Menu:" + ls +
-                        "0. Exit Program" + ls +
-                        "=== Exit ====" + ls + ls
+                "Menu:" + ls
+                        + "0. Exit Program" + ls
+                        + "=== Exit ====" + ls + ls
         ));
     }
 
@@ -87,15 +87,15 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         String ls = System.lineSeparator();
         assertThat(out.toString(), is(
-                "Menu:" + ls +
-                        "0. Show all items" + ls +
-                        "1. Exit Program" + ls +
-                        "=== Show all items ====" + ls +
-                        "Хранилище еще не содержит заявок" + ls + ls +
-                        "Menu:" + ls +
-                        "0. Show all items" + ls +
-                        "1. Exit Program" + ls +
-                        "=== Exit ====" + ls + ls
+                "Menu:" + ls
+                        + "0. Show all items" + ls
+                        + "1. Exit Program" + ls
+                        + "=== Show all items ====" + ls
+                        + "Хранилище еще не содержит заявок" + ls + ls
+                        + "Menu:" + ls
+                        + "0. Show all items" + ls
+                        + "1. Exit Program" + ls
+                        + "=== Exit ====" + ls + ls
         ));
     }
 
@@ -114,16 +114,16 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         String ls = System.lineSeparator();
         assertThat(out.toString(), is(
-                "Menu:" + ls +
-                        "0. Show all items" + ls +
-                        "1. Exit Program" + ls +
-                        "=== Show all items ====" + ls +
-                        item1 + ls +
-                        item2 + ls + ls +
-                        "Menu:" + ls +
-                        "0. Show all items" + ls +
-                        "1. Exit Program" + ls +
-                        "=== Exit ====" + ls + ls
+                "Menu:" + ls
+                        + "0. Show all items" + ls
+                        + "1. Exit Program" + ls
+                        + "=== Show all items ====" + ls
+                        + item1 + ls
+                        + item2 + ls + ls
+                        + "Menu:" + ls
+                        + "0. Show all items" + ls
+                        + "1. Exit Program" + ls
+                        + "=== Exit ====" + ls + ls
         ));
     }
 
@@ -140,15 +140,15 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         String ls = System.lineSeparator();
         assertThat(out.toString(), is(
-                "Menu:" + ls +
-                        "0. Find item by id" + ls +
-                        "1. Exit Program" + ls +
-                        "=== Find item by id ====" + ls +
-                        "Заявка с введенным id: 1 не найдена." + ls + ls +
-                        "Menu:" + ls +
-                        "0. Find item by id" + ls +
-                        "1. Exit Program" + ls +
-                        "=== Exit ====" + ls + ls
+                "Menu:" + ls
+                        + "0. Find item by id" + ls
+                        + "1. Exit Program" + ls
+                        + "=== Find item by id ====" + ls
+                        + "Заявка с введенным id: 1 не найдена." + ls + ls
+                        + "Menu:" + ls
+                        + "0. Find item by id" + ls
+                        + "1. Exit Program" + ls
+                        + "=== Exit ====" + ls + ls
         ));
     }
 
@@ -166,15 +166,15 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         String ls = System.lineSeparator();
         assertThat(out.toString(), is(
-                "Menu:" + ls +
-                        "0. Find item by id" + ls +
-                        "1. Exit Program" + ls +
-                        "=== Find item by id ====" + ls +
-                        item + ls + ls +
-                        "Menu:" + ls +
-                        "0. Find item by id" + ls +
-                        "1. Exit Program" + ls +
-                        "=== Exit ====" + ls + ls
+                "Menu:" + ls
+                        + "0. Find item by id" + ls
+                        + "1. Exit Program" + ls
+                        + "=== Find item by id ====" + ls
+                        + item + ls + ls
+                        + "Menu:" + ls
+                        + "0. Find item by id" + ls
+                        + "1. Exit Program" + ls
+                        + "=== Exit ====" + ls + ls
         ));
     }
 
@@ -191,15 +191,15 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         String ls = System.lineSeparator();
         assertThat(out.toString(), is(
-                "Menu:" + ls +
-                        "0. Find items by name" + ls +
-                        "1. Exit Program" + ls +
-                        "=== Find items by name ====" + ls +
-                        "Заявки с именем: Item не найдены." + ls + ls +
-                        "Menu:" + ls +
-                        "0. Find items by name" + ls +
-                        "1. Exit Program" + ls +
-                        "=== Exit ====" + ls + ls
+                "Menu:" + ls
+                        + "0. Find items by name" + ls
+                        + "1. Exit Program" + ls
+                        + "=== Find items by name ====" + ls
+                        + "Заявки с именем: Item не найдены." + ls + ls
+                        + "Menu:" + ls
+                        + "0. Find items by name" + ls
+                        + "1. Exit Program" + ls
+                        + "=== Exit ====" + ls + ls
         ));
     }
 
@@ -219,16 +219,16 @@ public class StartUITest {
         new StartUI(out).init(in, tracker, actions);
         String ls = System.lineSeparator();
         assertThat(out.toString(), is(
-                "Menu:" + ls +
-                        "0. Find items by name" + ls +
-                        "1. Exit Program" + ls +
-                        "=== Find items by name ====" + ls +
-                        item1 + ls +
-                        item3 + ls + ls +
-                        "Menu:" + ls +
-                        "0. Find items by name" + ls +
-                        "1. Exit Program" + ls +
-                        "=== Exit ====" + ls + ls
+                "Menu:" + ls
+                        + "0. Find items by name" + ls
+                        + "1. Exit Program" + ls
+                        + "=== Find items by name ====" + ls
+                        + item1 + ls
+                        + item3 + ls + ls
+                        + "Menu:" + ls
+                        + "0. Find items by name" + ls
+                        + "1. Exit Program" + ls
+                        + "=== Exit ====" + ls + ls
         ));
     }
 

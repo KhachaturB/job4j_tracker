@@ -7,7 +7,7 @@ public class VehicleTrainingGround {
         Vehicle train = new Train();
         Vehicle car = new Car();
 
-        Vehicle[] vehicles = { aircraft, train, car };
+        Vehicle[] vehicles = {aircraft, train, car};
         for (Vehicle vehicle : vehicles) {
             vehicle.move();
         }
